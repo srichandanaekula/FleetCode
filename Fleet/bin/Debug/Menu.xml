@@ -1,0 +1,82 @@
+﻿<Application>
+  
+  <Menus>
+    <action type="add">
+      <Menu UniqueID="VSP_FLT" Type="2" String="Fleet Management" Position="5" FatherUID="43520" Enabled="1" Checked="0">
+        <Menus>
+          <action type="add">
+            <Menu UniqueID="VSP_FLT_TRSHT" Type="1" String="Trip Sheet" Position="4" FatherUID="VSP_FLT" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_CALBRTN" Type="1" String="Callibration" Position="5" FatherUID="VSP_FLT" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_PRTVRMDR" Type="1" String="Preventive Reminder" Position="6" FatherUID="VSP_FLT" Enabled="1" Checked="0"/>
+            <!--<Menu UniqueID="VSP_FLT_FLUPLD" Type="1" String="Fuel Upload" Position="7" FatherUID="VSP_FLT" Enabled="1" Checked="0"/>-->
+            <Menu UniqueID="VSP_FLT_ACCHIST" Type="1" String="Accident History" Position="8" FatherUID="VSP_FLT" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_INSPAY" Type="1" String="Insurance Payments" Position="9" FatherUID="VSP_FLT" Enabled="1" Checked="0"/>
+            <!--<Menu UniqueID="VSP_FLT_IMPDATA" Type="1" String="Import Data" Position="10" FatherUID="VSP_FLT" Enabled="1" Checked="0"/>-->
+            <Menu UniqueID="VSP_FLT_VECHSTS" Type="1" String="Vehicle Status" Position="11" FatherUID="VSP_FLT" Enabled="1" Checked="0"/>
+            <!--<Menu UniqueID="VSP_DEL_CONF" Type="1" String="Delivery Confirmation" Position="12" FatherUID="VSP_FLT" Enabled="1" Checked="0"/>-->
+          </action>
+        </Menus>
+      </Menu>
+    </action>
+  </Menus>
+  
+  <Menus>
+    <action type="add">
+      <Menu UniqueID="VSP_FLT_SETUP" Type="2" String="Setup" Position="0" FatherUID="VSP_FLT" Enabled="1" Checked="0">
+        <Menus>
+          <action type="add">
+            <Menu UniqueID="VSP_FLT_CNFGSRN" Type="1" String="Configration Screen" Position="0" FatherUID="VSP_FLT_SETUP" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_DDCS" Type="1" String="DropDown Configration Screen" Position="1" FatherUID="VSP_FLT_SETUP" Enabled="1" Checked="0"/>
+          </action>
+        </Menus>
+      </Menu>
+    </action>
+  </Menus>
+
+  <Menus>
+    <action type="add">
+      <Menu UniqueID="VSP_FLT_MASTERS" Type="2" String="Masters" Position="1" FatherUID="VSP_FLT" Enabled="1" Checked="0">
+        <Menus>
+          <action type="add">
+            <Menu UniqueID="VSP_FLT_CALMSTR" Type="1" String="Callibration Master" Position="0" FatherUID="VSP_FLT_MASTERS" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_RTMSTR" Type="1" String="Route Master" Position="1" FatherUID="VSP_FLT_MASTERS" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_TSKMSTR" Type="1" String="Task Master" Position="2" FatherUID="VSP_FLT_MASTERS" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_VMSTR" Type="1" String="Vehicle Master" Position="3" FatherUID="VSP_FLT_MASTERS" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_DRVRMSTR" Type="1" String="Driver Master" Position="4" FatherUID="VSP_FLT_MASTERS" Enabled="1" Checked="0"/>
+          
+          </action>
+        </Menus>
+      </Menu>
+    </action>
+  </Menus>
+   
+  <Menus>
+    <action type="add">
+      <Menu UniqueID="VSP_FLT_TYRMGMT" Type="2" String="Tyre Managment" Position="2" FatherUID="VSP_FLT" Enabled="1" Checked="0">
+        <Menus>
+          <action type="add">
+            <Menu UniqueID="VSP_FLT_TPMSTR" Type="1" String="Tyre Position Master" Position="0" FatherUID="VSP_FLT_TYRMGMT" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_TYRMSTR" Type="1" String="Tyre Master" Position="1" FatherUID="VSP_FLT_TYRMGMT" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_TYRMPG" Type="1" String="Tyre Mapping" Position="2" FatherUID="VSP_FLT_TYRMGMT" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_TYRMTNC" Type="1" String="Tyre Maintenance" Position="3" FatherUID="VSP_FLT_TYRMGMT" Enabled="1" Checked="0"/>
+          </action>
+        </Menus>
+      </Menu>
+    </action>
+  </Menus>
+  
+  <Menus>
+    <action type="add">
+      <Menu UniqueID="VSP_FLT_TANKMGMT" Type="2" String="Tank Managment" Position="3" FatherUID="VSP_FLT" Enabled="1" Checked="0">
+        <Menus>
+          <action type="add">
+            <Menu UniqueID="VSP_FLT_TANKMSTR" Type="1" String="Tank Master" Position="0" FatherUID="VSP_FLT_TANKMGMT" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_TANKMPG" Type="1" String="Tank Mapping" Position="1" FatherUID="VSP_FLT_TANKMGMT" Enabled="1" Checked="0"/>
+            <Menu UniqueID="VSP_FLT_TNKMTNC" Type="1" String="Tank Maintenance" Position="2" FatherUID="VSP_FLT_TANKMGMT" Enabled="1" Checked="0"/>
+          </action>
+        </Menus>
+      </Menu>
+    </action>
+  </Menus>
+  
+</Application>

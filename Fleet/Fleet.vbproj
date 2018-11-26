@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC2FCD91-3A2F-46EA-8BB7-3E31BADA5988}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Fleet</RootNamespace>
+    <AssemblyName>Fleet</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Fleet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Fleet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.StartUp\clsWindowWrapper.vb" />
+    <Compile Include="1.StartUp\MainCls.vb" />
+    <Compile Include="1.StartUp\Module1.vb" />
+    <Compile Include="2.Utilities\Utilities.vb" />
+    <Compile Include="3.DatabaseCreation\DatabaseCreation.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Purchase\clsSerialBatchFiles.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Sales\clsDeliveryBatchFile.vb" />
+    <Compile Include="4.BusinessClasses\clsDeliveryConfirmation.vb" />
+    <Compile Include="4.BusinessClasses\clsUser.vb" />
+    <Compile Include="4.BusinessClasses\clsVehicleStatus.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Inventory\clsInventoryTransfer.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Purchase\clsApInvoice.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Sales\clsArInvoice.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Sales\clsDelivery.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Purchase\clsOutgoingPayment.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Sales\clsIncomingPayment.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Sales\clsSalesOrder.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Sales\clsSalesQuotation.vb" />
+    <Compile Include="4.BusinessClasses\clsAccidentHistory.vb" />
+    <Compile Include="4.BusinessClasses\clsCallibration.vb" />
+    <Compile Include="4.BusinessClasses\2.Masters\clsCallibrationMaster.vb" />
+    <Compile Include="4.BusinessClasses\1.Setup\clsConfigurationScreen.vb" />
+    <Compile Include="4.BusinessClasses\clsDocumentType.vb" />
+    <Compile Include="4.BusinessClasses\2.Masters\clsDriverMaster.vb" />
+    <Compile Include="4.BusinessClasses\1.Setup\clsDropDwnCofigScrn.vb" />
+    <Compile Include="4.BusinessClasses\clsFuelUpload.vb" />
+    <Compile Include="4.BusinessClasses\5.Standard Masters\clsGeneralSettings.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Inventory\clsGoodIssue.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Purchase\clsGrpo.vb" />
+    <Compile Include="4.BusinessClasses\5.Standard Masters\clsItemGroup.vb" />
+    <Compile Include="4.BusinessClasses\clsInsurancePayments.vb" />
+    <Compile Include="4.BusinessClasses\clsPreventiveReminder.vb" />
+    <Compile Include="4.BusinessClasses\2.Masters\clsRouteMaster.vb" />
+    <Compile Include="4.BusinessClasses\1.Setup\clsSelectDistributionRules.vb" />
+    <Compile Include="4.BusinessClasses\6.Standard Transactions\Purchase\clsPurchaseOrder.vb" />
+    <Compile Include="4.BusinessClasses\4.Tank Management\clsTankMaintenance.vb" />
+    <Compile Include="4.BusinessClasses\4.Tank Management\clsTankMapping.vb" />
+    <Compile Include="4.BusinessClasses\4.Tank Management\clsTankMaster.vb" />
+    <Compile Include="4.BusinessClasses\2.Masters\clsTaskMaster.vb" />
+    <Compile Include="4.BusinessClasses\3.Tyre Management\clsTyreMaintenance.vb" />
+    <Compile Include="4.BusinessClasses\3.Tyre Management\clsTyreMapping.vb" />
+    <Compile Include="4.BusinessClasses\3.Tyre Management\clsTyreMaster.vb" />
+    <Compile Include="4.BusinessClasses\3.Tyre Management\clsTyrePositionMaster.vb" />
+    <Compile Include="4.BusinessClasses\2.Masters\clsVehicleMaster.vb" />
+    <Compile Include="4.BusinessClasses\clsTripSheet.vb" />
+    <Compile Include="4.BusinessClasses\clsImportData.vb" />
+    <Compile Include="6.CrystalReports\Forms\VehicleStatus.Designer.vb">
+      <DependentUpon>VehicleStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="6.CrystalReports\Forms\VehicleStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6.CrystalReports\Reports\RptVehicleStatus.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptVehicleStatus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="6.CrystalReports\XSD\VehicleStatus.xsd" />
+    <None Include="app.config" />
+    <None Include="bin\Debug\Fleet.vshost.exe.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="5.XML\Vehicle Master.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.XML\DropDownConfigScreen.xml" />
+    <EmbeddedResource Include="5.XML\DriverMaster.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.XML\TripSheet.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.XML\Route Master.xml" />
+    <EmbeddedResource Include="5.XML\Select Distribution Rule.xml" />
+    <EmbeddedResource Include="5.XML\Task Master.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.XML\Tyre Mapping.xml" />
+    <EmbeddedResource Include="5.XML\Tyre Master.xml" />
+    <EmbeddedResource Include="5.XML\Preventive Reminder.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.XML\Callibration Master.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.XML\Tyre Position Master.xml" />
+    <EmbeddedResource Include="5.XML\Callibration.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.XML\ConfigurationSreen.xml" />
+    <EmbeddedResource Include="5.XML\Fuel Upload.xml" />
+    <EmbeddedResource Include="5.XML\Tyre Maintenance.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.XML\Tank Maintenance.xml" />
+    <EmbeddedResource Include="5.XML\Tank Mapping.xml" />
+    <EmbeddedResource Include="5.XML\Tank Master.xml" />
+    <EmbeddedResource Include="5.XML\Accident History.xml" />
+    <EmbeddedResource Include="5.XML\Document Type.xml" />
+    <EmbeddedResource Include="5.XML\Insurance Payments.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.XML\ImportData.xml" />
+    <EmbeddedResource Include="5.XML\VehicleStatus.xml" />
+    <EmbeddedResource Include="6.CrystalReports\Forms\VehicleStatus.resx">
+      <DependentUpon>VehicleStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6.CrystalReports\Reports\RptVehicleStatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptVehicleStatus.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.XML\DeliverConfirmation.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="bin\Debug\Fleet.vshost.exe" />
+    <Content Include="bin\Debug\Menu.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SAPbobsCOM">
+      <Guid>{FC8030BE-F5D2-4B8E-8F92-44228FE30090}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="SAPbouiCOM">
+      <Guid>{6048236A-956D-498D-A6F1-9C81C13AB6E8}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="6.CrystalReports\ReportClasses\" />
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

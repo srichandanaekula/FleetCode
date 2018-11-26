@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VehicleStatus"
+    targetNamespace="http://tempuri.org/VehicleStatus.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/VehicleStatus.xsd"
+    xmlns:mstns="http://tempuri.org/VehicleStatus.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:element name="VehicleStatus">
+    <xs:complexType>
+      <xs:sequence />
+      <xs:attribute name="Docnum" type="xs:integer" />
+      <xs:attribute name="VSPDT" type="xs:date" />
+	    <xs:attribute name="VSPVNO" type="xs:integer" />
+	    <xs:attribute name="VSPCNTR" type="xs:string" />
+  	  <xs:attribute name="VSPCNM" type="xs:string" />
+	    <xs:attribute name="VSPDRIV" type="xs:string" />
+	    <xs:attribute name="VSPCLN" type="xs:string" />
+      <xs:attribute name="VSPROUTE" type="xs:string" />
+
+      <xs:attribute name="VSPTY" type="xs:string"/>
+      <xs:attribute name="VSPSTA" type="xs:string"/>
+	    <xs:attribute name="VSPOPKM" type="xs:double"/>
+	    <xs:attribute name="VSPCLKM" type="xs:string"/>
+      <xs:attribute name="VSPSOURC" type="xs:string"/>
+      <xs:attribute name="VSPDST" type="xs:string"/>
+      <xs:attribute name="VSPLOC" type="xs:string"/>
+	    <xs:attribute name="VSPCHML" type="xs:string"/>
+	    <xs:attribute name="VSPQUA" type="xs:double"/>
+	    <xs:attribute name="VSPCSVE" type="xs:string"/>
+	    <xs:attribute name="VSPREM" type="xs:string"/>
+      <xs:attribute name="VSPTOTKM" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
